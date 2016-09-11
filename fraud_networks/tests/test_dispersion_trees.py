@@ -11,8 +11,9 @@ def test_DispersionEdges():
 def test_DispersionTree():
     disp_tree = DispersionTree()
     assert not disp_tree.edge_dataframe.empty
-    assert disp_tree.graph
-    assert nx.is_tree(disp_tree)
+    assert nx.is_arborescence(disp_tree.graph)
+
+    
 
 
 
